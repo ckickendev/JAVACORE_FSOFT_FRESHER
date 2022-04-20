@@ -1,0 +1,5 @@
+package JPL.java.log4j;
+
+public class LogFile {
+
+}

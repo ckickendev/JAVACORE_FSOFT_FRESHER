@@ -1,0 +1,11 @@
+package tet;
+
+public class M {
+	int y;
+	public static void main(String[] args) {
+		int a = 1;
+		short b =1;
+		long c= b+a;
+		a = c+a;
+	}
+}

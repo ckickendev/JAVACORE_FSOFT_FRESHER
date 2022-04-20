@@ -1,0 +1,15 @@
+package com.exam.run;
+
+public class View {
+	
+	public static void main(String[] args) {
+		System.out.println("Enter so");
+		
+	}
+	
+	public static void menu() {
+		System.out.println("=========Management Citizen=============");
+		System.out.println("1");
+		
+	}
+}

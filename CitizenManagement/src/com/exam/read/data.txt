@@ -1,0 +1,10 @@
+1,CT001,Nguyen Bao Anh,10 Phan Chu Trinh,0905987689,9/1/2021,Tho co khi,,FPT,9/3/2021
+2,CT002,Pham Anh Minh,25 Nguyen Chi Thanh,0678567899,8/20/2021,,Tap hoa,,8/25/2021
+3,CT003,Le Duong Phuc,13 Nguyen Van Thoai,0917876543,8/25/2021,Lap trinh vien ,,Binh Minh,8/30/2021
+1,CT004,Tran Cong Minh,30 Nguyen Phuoc Lan,0987367899,9/3/2021,Tho moc,,ABC,9/5/2021
+2,CT005,Tran Dinh Nghia,10 Vo Chi Cong,0936896789,9/6/2021,,Thuoc Bac,,9/10/2021
+3,CT006,Tran Gia Bao,21 Quach Thi Trang,0870987809,9/1/2021,Cong nhan,,Phat Dat,9/3/2021
+1,CT007,Nguyen Minh Phuong,22 Bui Thien Ngo,0903276578,8/20/2021,Tho dien ,,FPT,8/25/2021
+2,CT008,Pham Ba Chau,15 Ong Ich Khiem,0927899083,8/25/2021,,Do gia dung,,8/30/2021
+3,CT009,Tran Nhu Thu,20 Dao Tan ,0734509889,9/3/2021,Cong nhan,,Anh Minh,9/5/2021
+1,CT010,Nguyen Thi Thuy,13 Ong Ich Duong,0898655789,9/6/2021,Tho may,,ABC,9/10/2021

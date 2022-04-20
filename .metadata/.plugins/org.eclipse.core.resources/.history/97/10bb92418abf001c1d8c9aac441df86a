@@ -1,0 +1,9 @@
+package tet;
+
+public class M {
+	int y;
+	public static void main(String[] args) {
+		String s= null;
+		System.out.println(s.concat("abc"));
+	}
+}

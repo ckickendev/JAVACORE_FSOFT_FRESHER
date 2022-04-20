@@ -1,0 +1,32 @@
+package java.exam.entities;
+
+import java.util.Date;
+
+public class Employee extends Citizen{
+	private String Job;
+	private String Company;
+	public Employee(String citizenID, String name, String address, String phone, Date pCRDate, int type, String job,
+			String company) {
+		super(citizenID, name, address, phone, pCRDate, type);
+		Job = job;
+		Company = company;
+	}
+	public String getJob() {
+		return Job;
+	}
+	public void setJob(String job) {
+		Job = job;
+	}
+	public String getCompany() {
+		return Company;
+	}
+	public void setCompany(String company) {
+		Company = company;
+	}
+	@Override
+	public void ShowInfo() {
+		super.ShowInfo();
+		System.out.println(", Job ="+ Job+ ", Company="+ Company);
+	}
+	
+}

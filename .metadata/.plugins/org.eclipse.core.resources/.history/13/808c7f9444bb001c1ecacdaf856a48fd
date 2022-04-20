@@ -1,0 +1,5 @@
+package JPL.java.exception;
+
+public class BirthdayException {
+
+}

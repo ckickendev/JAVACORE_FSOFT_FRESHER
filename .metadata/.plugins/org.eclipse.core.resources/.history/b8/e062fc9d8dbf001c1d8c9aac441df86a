@@ -1,0 +1,15 @@
+package tet;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class M {
+	public int a;public static int b;
+	
+	public static void main(String[] args) {
+		M m1 = new M();
+		M m2 = new M();
+		m1.a++;m1.b++;
+		System.out.println(m1.a+""+m1.b+ ""+m2.a+""+m2.b);
+	}
+}

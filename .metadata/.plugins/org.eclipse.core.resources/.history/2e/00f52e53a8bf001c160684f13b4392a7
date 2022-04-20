@@ -1,0 +1,26 @@
+package java.exam.entities;
+
+import java.util.Date;
+
+public class Shop extends Citizen{
+	private String Domain;
+
+	public Shop(String citizenID, String name, String address, String phone, Date pCRDate, int type, String domain) {
+		super(citizenID, name, address, phone, pCRDate, type);
+		Domain = domain;
+	}
+
+	public String getDomain() {
+		return Domain;
+	}
+
+	public void setDomain(String domain) {
+		Domain = domain;
+	}
+	@Override
+	public void ShowInfo() {
+		super.ShowInfo();
+		System.out.println(", Domain ="+ Job+ ", Company="+ Company);
+	}
+	
+}

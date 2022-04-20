@@ -1,0 +1,8 @@
+package java.exam.entities;
+
+
+
+
+public class Citizen {
+	CitizenID
+}

@@ -1,0 +1,8 @@
+package JPL.java.log4j;
+
+import org.apache.log4j.Logger;
+
+public class LogFile {
+	final Logger logger =  Logger.getLogger(LogFile.class);
+	logger. ("This is debug: "+ "parametter/exception objerct");
+}	

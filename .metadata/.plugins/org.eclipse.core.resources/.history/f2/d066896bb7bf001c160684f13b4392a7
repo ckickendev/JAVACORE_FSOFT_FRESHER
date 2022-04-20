@@ -1,0 +1,11 @@
+package com.exam.exception;
+
+public class DateException {
+	public InputException(String mess) {
+		super(mess);
+	}
+	
+	public InputException() {
+		super();
+	}
+}

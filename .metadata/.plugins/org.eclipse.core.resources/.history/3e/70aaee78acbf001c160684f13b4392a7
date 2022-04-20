@@ -1,0 +1,74 @@
+package java.exam.read;
+
+import java.exam.entities.Citizen;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+public class ReadFile {
+	ArrayList<Citizen> citizens = new ArrayList<Citizen>();
+
+	public void handleRead() throws FileNotFoundException {
+		String line = "";
+		String splitBy = ",";
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(
+					"C:\\Users\\theso\\eclipse-workspace\\JPL\\CitizenManagement\\src\\java\\exam\\read\\data.csv"));
+			while ((line = br.readLine()) != null)
+			{
+				String[] data = line.split(splitBy); // use comma as separator
+				if(Integer.valueOf(data[0])==1) {
+					System.out.println("Freelancer");
+				}
+			}
+			printList();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public void printList() {
+		System.out.println("a. List student from file");
+		for(Student x: students) {
+			System.out.println(x);
+		}
+	}
+	
+	public void checkAndPrintList() {
+		System.out.println("b. List student from file and checked");
+		int line = 1;
+		for(Student x: students) {
+			if(checkPhone(x.getStdPhone())== true & checkMail(x.getStdEmail())== true) {
+				System.out.println(x);
+			}else {
+				if(checkPhone(x.getStdPhone())==false && checkMail(x.getStdEmail())== false) {
+					System.out.println("Line "+ line+ ": Co loi sai dinh dang StdPhone, StdEmail");
+				}else if(checkPhone(x.getStdPhone()) == false) {
+					System.out.println(x.getStdPhone());
+					System.out.println("Line "+ line+ ": Co loi sai dinh dang StdPhone");
+				}else {
+					System.out.println("Line "+ line+ ": Co loi sai dinh dang StdEmail");
+				}
+			}
+			line++;
+		}
+	}
+
+	public boolean checkPhone(String phone) {
+		String regex = "\\d{9}|(?:\\d{3}-){2}\\d{4}|\\(\\d{3}\\)\\d{3}-?\\d{4}";
+		return phone.matches(regex);
+	}
+
+	public boolean checkMail(String email) {
+		String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+		return email.matches(regex);
+	}
+
+	public ArrayList<Student> getStudents() {
+		return students;
+	}
+
+	public void setStudents(ArrayList<Student> students) {
+		this.students = students;
+	}
+}

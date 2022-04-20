@@ -1,0 +1,7 @@
+package JPL.java.entities;
+
+import java.util.Comparator;
+
+public class CandidateComparator implements Comparator<Candidate>{
+
+}

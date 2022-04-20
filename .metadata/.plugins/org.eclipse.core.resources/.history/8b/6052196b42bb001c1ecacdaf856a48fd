@@ -1,0 +1,95 @@
+package JPL.java.util;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.time.format.ResolverStyle;
+import java.util.Scanner;
+
+public class Validator {
+	public final Scanner scanner = new Scanner(System.in);
+
+	public String checkInputString() {
+		while (true) {
+			String result = scanner.nextLine();
+			if (!result.isEmpty()) {
+				return result;
+			} else {
+				System.out.println("Your input must be not null");
+				System.out.println("Please input again");
+			}
+		}
+	}
+
+	public int inputTypeInt() {
+		int intValue = 0;
+		do {
+			String value = scanner.nextLine();
+			try {
+				intValue = Integer.parseInt(value);
+			} catch (Exception e) {
+				System.out.println("Please input int value!");
+			}
+			break;
+		} while (true);
+		return intValue;
+	}
+
+	public float inputTypeFloat() {
+		float floatValue = 0;
+		do {
+			String value = scanner.nextLine();
+			try {
+				floatValue = Float.parseFloat(value);
+			} catch (Exception e) {
+				System.out.println("Please input float value!");
+			}
+			break;
+		} while (true);
+		return floatValue;
+	}
+
+	public double inputTypeDouble() {
+		double doubleValue = 0;
+		do {
+			String value = scanner.nextLine();
+			try {
+				doubleValue = Double.parseDouble(value);
+			} catch (Exception e) {
+				System.out.println("Please input double value!");
+			}
+			break;
+		} while (true);
+		return doubleValue;
+	}
+
+	public String checkDate() {
+		do {
+			System.out.println("Enter date: ");
+			String date = scanner.nextLine();
+
+			if (isValid(date) == true) {
+				return date;
+			}
+			System.out.println("Please enter date again! Format:(yyyy-mm-dd)");
+		} while (true);
+	}
+
+	public boolean isValid(String date) {
+		boolean valid = false;
+		try {
+			LocalDate.parse(date, DateTimeFormatter.ofPattern("uuuu-M-d").withResolverStyle(ResolverStyle.STRICT));
+			valid = true;
+		} catch (DateTimeParseException e) {
+			valid = false;
+		}
+		return valid;
+	}
+
+	public static void main(String[] args) {
+		Validator validator = new Validator();
+		validator.checkDate();
+	}
+
+//    public 
+}

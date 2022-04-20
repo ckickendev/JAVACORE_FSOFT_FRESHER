@@ -1,0 +1,13 @@
+package tet;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class M {
+	static boolean a,b,c;
+	
+	public static void main(String[] args) {
+		boolean x = (a=true)|| (b=true)||(c=true);
+		System.out.println(a+","+b+","+c);
+	}
+}

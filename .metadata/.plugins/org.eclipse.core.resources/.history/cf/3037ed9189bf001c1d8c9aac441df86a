@@ -1,0 +1,6 @@
+package tet;
+
+public class M {
+	int y;
+	
+}

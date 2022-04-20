@@ -1,0 +1,9 @@
+package JPL.java.log4j;
+
+import org.apache.log4j.Logger;
+
+import jdk.internal.module.Resources;
+
+public class LogFile {
+	final Logger logger =  Logger.getLogger(Resources.class);
+}	

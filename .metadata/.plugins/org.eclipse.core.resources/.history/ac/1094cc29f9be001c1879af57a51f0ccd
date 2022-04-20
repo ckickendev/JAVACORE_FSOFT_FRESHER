@@ -1,0 +1,12 @@
+package JPL.java.log4j;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+public class LogFile {
+	public static Logger logger =  Logger.getLogger(LogFile.class);
+	public static void main(String[] args) {
+        PropertyConfigurator.configure("resources/log4j1.properties");
+        logger.info("Sample info message");
+    }
+}	

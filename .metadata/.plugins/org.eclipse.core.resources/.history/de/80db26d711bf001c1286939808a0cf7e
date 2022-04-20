@@ -1,0 +1,4 @@
+driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+url=jdbc:sqlserver://localhost:1433;databaseName=CandidateManagement&logger=com.mysql.jdbc.log.Slf4JLogger&profileSQL=true
+userName=sa
+password=gintaka

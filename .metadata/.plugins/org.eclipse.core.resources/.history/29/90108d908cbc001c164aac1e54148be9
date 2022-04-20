@@ -1,0 +1,5 @@
+package JPL.java.entities;
+
+public class CandidateComparator {
+
+}

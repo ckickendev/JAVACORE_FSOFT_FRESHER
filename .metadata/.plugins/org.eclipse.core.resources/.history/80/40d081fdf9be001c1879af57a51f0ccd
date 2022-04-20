@@ -1,0 +1,10 @@
+package JPL.java.exception;
+
+public class InputException extends Exception {
+	public InputException() {
+		super("The system has encountered an unexpected problem, sincerely sorry !!!\nEnter again!");// TODO Auto-generated constructor stub
+	}
+	public InputException(String mess) {
+		super(mess);// TODO Auto-generated constructor stub
+	}
+}

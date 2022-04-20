@@ -1,0 +1,25 @@
+package tet;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class M {
+	static void m1(StringBuffer s1) {
+		s1 = s1.append("B");
+		System.out.println(s1);
+	}
+	static void m2(StringBuffer s1) {
+		s1.append("C");
+		System.out.println(s1);
+	}
+	public static void main(String[] args) {
+		TreeSet map = new TreeSet();
+		map.add("one");
+		map.add("two");
+		map.add("three");
+		Iterator it = map.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+	}
+}

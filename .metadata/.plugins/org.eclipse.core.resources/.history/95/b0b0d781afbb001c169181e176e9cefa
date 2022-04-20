@@ -1,0 +1,17 @@
+package JPL.java.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import JPL.java.entities.Candidate;
+import fa.training.model.Bill;
+
+public class CandidateDAO {
+	List<Candidate> getAll() throws SQLException;
+
+	boolean saveBill(Bill bill) throws SQLException;
+
+	Bill findBillsByBillCode(String billCode) throws SQLException;
+
+	List<Bill> findBillsByCustomerName(String customerName) throws SQLException;
+}

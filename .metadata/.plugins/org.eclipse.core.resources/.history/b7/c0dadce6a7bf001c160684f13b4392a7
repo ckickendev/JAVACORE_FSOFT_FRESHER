@@ -1,0 +1,7 @@
+package java.exam.entities;
+
+public class Employee {
+	private String Job;
+	private String Company;
+	
+}

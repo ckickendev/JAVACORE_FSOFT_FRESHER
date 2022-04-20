@@ -1,0 +1,8 @@
+package com.exam.utils;
+
+import java.sql.Connection;
+
+public class DBUtils {
+	private static DBUtils instance;
+	private Connection connection;
+}

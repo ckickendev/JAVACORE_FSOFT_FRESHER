@@ -1,0 +1,10 @@
+package tet;
+
+public class M {
+	int y;
+	public static void main(String[] args) {
+		int a =1;
+		a+=++a + a++;
+		System.out.println(a);
+	}
+}

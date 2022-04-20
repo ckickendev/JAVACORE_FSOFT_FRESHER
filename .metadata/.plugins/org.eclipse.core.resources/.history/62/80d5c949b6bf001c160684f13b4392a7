@@ -1,0 +1,19 @@
+package com.exam.run;
+
+import com.exam.utils.Validator;
+
+public class View {
+	Validator val = new Validator();
+	
+	public static void main(String[] args) {
+		System.out.println("Enter so");
+		String so = 
+		
+	}
+	
+	public static void menu() {
+		System.out.println("=========Management Citizen=============");
+		System.out.println("1");
+		
+	}
+}

@@ -1,0 +1,21 @@
+package tet;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class M {
+	
+	
+	public static void main(String[] args) {
+		try {
+			System.out.println();
+			
+		}catch(Exception e) {
+			System.out.println("excepape");
+			
+		}finally {
+			 System.out.println("Fina");
+		}
+		System.out.println("Fi");
+	}
+}

@@ -1,0 +1,35 @@
+package java.exam.readfile;
+
+import java.exam.entities.Citizen;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Read {
+	ArrayList<Citizen> citizens = new ArrayList<Citizen>();
+
+	public void handleRead() throws FileNotFoundException {
+		String line = "";
+		String splitBy = ",";
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(
+					"C:\\Users\\theso\\eclipse-workspace\\JPL\\CitizenManagement\\src\\java\\exam\\read\\data.csv"));
+			while ((line = br.readLine()) != null)
+			{
+				String[] data = line.split(splitBy); // use comma as separator
+				if(Integer.valueOf(data[0])==1) {
+					System.out.println("Freelancer");
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		new Read().handleRead();
+	}
+}
+

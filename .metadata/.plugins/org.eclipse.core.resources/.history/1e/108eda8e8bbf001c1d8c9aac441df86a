@@ -1,0 +1,15 @@
+package tet;
+
+public class M {
+	static void m1(StringBuffer s1) {
+		s1 = s1.append("B");
+		System.out.println(s1);
+	}
+	static void m2(StringBuffer s1) {
+		s1.append("C");
+		System.out.println(s1);
+	}
+	public static void main(String[] args) {
+		StringBuffer s1 = new 
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;dbConfig.properties&apos; to &apos;GeneralAssignment/resources&apos;&#x0D;&#x0A;- Original project: &apos;JPL.L.L301_BillManagement&apos;&#x0D;&#x0A;- Destination element: &apos;GeneralAssignment/resources&apos;&#x0D;&#x0A;- Original element: &apos;dbConfig.properties&apos;" description="Copy file" destination="=GeneralAssignment/resources" element1="resources/dbConfig.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1649863303413" units="0" version="1.0"/>
+</session>

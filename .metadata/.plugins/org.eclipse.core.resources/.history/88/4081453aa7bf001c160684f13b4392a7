@@ -1,0 +1,10 @@
+package java.exam.entities;
+/**
+ * 
+ * 	@author theso
+ *	@version 1.0
+ *	@since 19/04/2022
+ */
+public class Citizen {
+	CitizenID
+}

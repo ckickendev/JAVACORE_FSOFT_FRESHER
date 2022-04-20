@@ -1,0 +1,21 @@
+package com.exam.run;
+
+import com.exam.exception.InputException;
+import com.exam.utils.Validator;
+
+public class View {
+	static Validator val = new Validator();
+	
+	public static void main(String[] args) throws InputException {
+		System.out.println("Enter so");
+		String so = val.checkInputString();
+		System.out.println(so.matches("^[0]{1}[0-9]{9:10}"));
+		
+	}
+	
+	public static void menu() {
+		System.out.println("=========Management Citizen=============");
+		System.out.println("1");
+		
+	}
+}

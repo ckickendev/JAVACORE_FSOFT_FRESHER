@@ -1,0 +1,12 @@
+package JPL.java.entities;
+
+import java.util.Comparator;
+
+public class CandidateComparator implements Comparator<Candidate>{
+
+	@Override
+	public int compare(Candidate o1, Candidate o2) {
+		return o1.getCandidate_Type() < o2.getCandidate_Type() ? 1 : 0;
+	}
+
+}
